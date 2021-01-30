@@ -4,17 +4,30 @@ using namespace std;
 
 int main()
 {
-    int n= 0;
-    int a = 0;
-    int b = 0;
-    
-    cin >> a >> b;
-    while (a <= b)
+    int n = 0;
+    int x = 0;
+    int y = 0;
+    int z = 0;
+
+    cin >> n;
+    for (int i = 0; i < n; i++)
     {
-        a *= 3;
-        b *= 2;
-        n++;
+        for (int j = 0; j < 3; j++)
+        {
+            cin >> x;
+            if (x == 1)
+            {
+                y++;
+            }
+
+        }
+        if (y >= 2)
+        {
+            z++;
+        }
+        y = 0;
     }
-    cout << n;
+    cout << z;
+
     return 0;
 }
