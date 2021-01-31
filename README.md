@@ -1,6 +1,6 @@
 # codeforces-prep
 Repo to keep track of solved programming problems
 
-kenbot: 5
+kenbot: 0
 
-ryanpc: 6
+ryanpc: 0
