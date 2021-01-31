@@ -30,17 +30,17 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    int arr[n];
+    vector<int> vec(n);
 
     for (int i = 0; i < n; ++i) {
-        cin >> arr[i];
+        cin >> vec[i];
     }
 
     // just use algorithm::sort lol
-    sort(arr, arr+n);
+    sort(vec.begin(), vec.end());
 
     for (int i = 0; i < n; ++i) {
-        cout << arr[i] << " ";
+        cout << vec[i] << " ";
     }
     return 0;
 }
